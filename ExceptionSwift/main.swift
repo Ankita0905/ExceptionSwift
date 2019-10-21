@@ -10,8 +10,11 @@ import Foundation
 
 do
 {
-    let f1=try Faculty(facultyId: 1, facultyName: "Ankita", Salary: 100)
-print(f1.facultyName)
+    let f1=try Faculty(facultyId: 1, facultyName: "Ankitajain", Salary: 1000)
+
+    f1.Iprint()
+    try f1.setName(name: "ankita")
+    print(f1.facultyName)
 }
 catch FacultyError.invalidEmployeeId(let facultyId)
 {
